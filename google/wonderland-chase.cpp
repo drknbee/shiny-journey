@@ -1,10 +1,5 @@
 // https://codingcompetitions.withgoogle.com/codejam/round/000000000087762e/0000000000b9c499#analysis
 
-
-/**
- *    author:  tourist
- *    created: 05.08.2022 17:42:45       
-**/
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -209,6 +204,7 @@ int main() {
       }
     }
     const int inf = (int) 1e9;
+    // If Alice is uncaught past half of 10 to the power of 9, Alice wins. So that's the size
     auto BFS = [&](int start) {
       vector<int> d(n, inf);
       vector<int> que(1, start);
